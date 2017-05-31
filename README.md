@@ -10,3 +10,8 @@ npm install -g phantomjs
 ```
 phantomjs demo.js
 ```
+
+## 参考
+
+- [phantomjs](http://phantomjs.org/page-automation.html)
+- [demo](http://www.jianshu.com/p/9efe08a8e99e)
