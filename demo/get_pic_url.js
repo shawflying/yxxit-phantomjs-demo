@@ -5,10 +5,12 @@ var page = require('webpage').create(),
 var url = system.args[1];
 page.open(url, function(status) {
     if (status === "success") {
+        console.log(page.title);
         // 处理页面
         var pic_url = page.evaluate(function() {
             // DOM操作
-            return document.getElementsByTagName('image').getAttribute('src');
+            //return document.getElementsByTagName('image').getAttribute('src');
+            return document.getElementsByClassName('m-img').getAttribute('href');
         });
         console.log(pic_url);
     } else {
